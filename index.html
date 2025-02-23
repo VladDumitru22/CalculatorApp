@@ -8,27 +8,27 @@
 </head>
 <body>
     
-    <div class="calculator">
-        <input type="display" readonly>
+    <div id="calculator">
+        <input id="display" readonly>
 
-        <div class="buttons">
-            <button onclick="appendToDisplay('+')">&plus;</button>
+        <div id="buttons">
+            <button onclick="appendToDisplay('+')" class="operator-button">&plus;</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('-')">&minus;</button>
+            <button onclick="appendToDisplay('-')" class="operator-button">&minus;</button>
             <button onclick="appendToDisplay('4')">4</button>
             <button onclick="appendToDisplay('5')">5</button>
             <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')">&times;;</button>
+            <button onclick="appendToDisplay('*')" class="operator-button">&times;</button>
             <button onclick="appendToDisplay('1')">1</button>
             <button onclick="appendToDisplay('2')">2</button>
             <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('/')">&divide;</button>
+            <button onclick="appendToDisplay('/')" class="operator-button">&divide;</button>
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">&comma;</button>
             <button onclick="calculate()">&equals;</button>
-            <button onclick="clearDisplay()">C</button>
+            <button onclick="clearDisplay()" class="operator-button">C</button>
         </div>
 
     </div>
